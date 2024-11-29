@@ -30,7 +30,7 @@
 
 ## Media Queries
 
-### Mobile (Up to 767px)
+### Mobile (Up to 767px)    
 #### Css 
 @media (max-width: 767px) {
   body {
