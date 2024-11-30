@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Support Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#donation-tracker">Donation Tracker</a></li>
+                <li><a href="#volunteer-hours">Volunteer Hours</a></li>
+                <li><a href="#event-signup">Event Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Donation Tracker Section -->
+        <section id="donation-tracker">
+            <h1>Donation Tracker</h1>
+            <p>Track and manage donations effectively.</p>
+
+            <!-- Donation Form -->
+            <form id="donationForm">
+                <label for="charityName">Charity Name:</label>
+                <input type="text" id="charityName" name="charityName" required>
+
+                <label for="donationAmount">Donation Amount:</label>
+                <input type="number" id="donationAmount" name="donationAmount" required>
+
+                <label for="donationDate">Date of Donation:</label>
+                <input type="date" id="donationDate" name="donationDate" required>
+
+                <label for="donorMessage">Donor Message:</label>
+                <textarea id="donorMessage" name="donorMessage"></textarea>
+
+                <button type="submit">Submit Donation</button>
+            </form>
+        </section>
+
+        <!-- Volunteer Hours Tracker Section -->
+        <section id="volunteer-hours">
+            <h1>Volunteer Hours Tracker</h1>
+            <p>Log your volunteer hours and contributions.</p>
+
+            <!-- Volunteer Hours Form -->
+            <form id="volunteerForm">
+                <label for="volunteerCharityName">Charity Name:</label>
+                <input type="text" id="volunteerCharityName" name="volunteerCharityName" required>
+
+                <label for="volunteerHours">Hours Volunteered:</label>
+                <input type="number" id="volunteerHours" name="volunteerHours" required min="1">
+
+                <label for="volunteerDate">Date:</label>
+                <input type="date" id="volunteerDate" name="volunteerDate" required>
+
+                <label for="volunteerRating">Experience Rating (1-5):</label>
+                <input type="number" id="volunteerRating" name="volunteerRating" required min="1" max="5">
+
+                <button type="submit">Log Volunteer Hours</button>
+            </form>
+
+            <!-- Logged Volunteer Hours Table -->
+            <table id="volunteerTable">
+                <thead>
+                    <tr>
+                        <th>Charity Name</th>
+                        <th>Hours Volunteered</th>
+                        <th>Date</th>
+                        <th>Experience Rating</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamically added rows will appear here -->
+                </tbody>
+            </table>
+
+            <!-- Summary Section -->
+            <div id="volunteerSummary">
+                <h2>Total Hours Volunteered: <span id="totalHours">0</span></h2>
+            </div>
+        </section>
+
+        <!-- Event Signup Section -->
+        <section id="event-signup">
+            <h1>Event Signup</h1>
+            <p>Register for community events with ease.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PiXELL River Financial. All rights reserved.</p>
+    </footer>
+
+    <!-- External Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
+     
