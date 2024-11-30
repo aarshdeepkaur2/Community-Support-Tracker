@@ -8,7 +8,7 @@ document.getElementById("volunteer-form").addEventListener("submit", function(ev
   const date = document.getElementById("date").value;
   const experienceRating = parseInt(document.getElementById("experience-rating").value);
 
-  // Input validation
+  
   if (!charityName || !hoursVolunteered || !date || !experienceRating) {
     alert("Please fill out all fields.");    
     return;
