@@ -1,4 +1,4 @@
-// Validation function
+// Validation function        
 function validateDonationForm({ charityName, donationAmount, donationDate }) {
     if (!charityName) {
         return false; // Charity Name is required

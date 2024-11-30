@@ -1,4 +1,4 @@
-# Style Guide
+# Style Guide       
 
 ## Colors
 Primary: #007bff (Used for primary buttons, links, and highlights)  

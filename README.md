@@ -1,4 +1,4 @@
-# Community-Support-Tracker     
+# Community-Support-Tracker          
 
 The Community Support Tracker is a project designed to help organizations track and manage community support activities such as donations, volunteer hours, and event signups. It aims to provide a simple interface to log and summarize key data, making it easier for groups to assess their initiatives and reach their goals.
 

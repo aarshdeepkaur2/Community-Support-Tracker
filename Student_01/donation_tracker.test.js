@@ -1,7 +1,7 @@
 const { validateDonationForm } = require('./script');
 
 describe("Donation Form Validation and Functionality", () => {
-    // Mocking the DOM for tests
+    // Mocking the DOM for tests       
     beforeEach(() => {
         document.body.innerHTML = `
             <form id="donationForm">
