@@ -12,7 +12,7 @@ beforeEach(() => {
   dom = new JSDOM(html);
   document = dom.window.document;
 
-  // Add the form functionality to the DOM window (you would import the JS script here)
+  
   const script = fs.readFileSync('./script.js', 'utf8');
   dom.window.eval(script);
 });
