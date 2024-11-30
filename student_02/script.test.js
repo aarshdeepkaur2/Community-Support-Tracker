@@ -1,4 +1,3 @@
-// volunteer.test.js
 
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
@@ -6,7 +5,7 @@ const fs = require('fs');
 let dom;
 let document;
 
-beforeEach(() => {
+beforeEach(() => {       
   // Set up the DOM
   const html = fs.readFileSync('./index.html', 'utf8');
   dom = new JSDOM(html);
