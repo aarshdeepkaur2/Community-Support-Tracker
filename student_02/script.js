@@ -10,7 +10,7 @@ document.getElementById("volunteer-form").addEventListener("submit", function(ev
 
   // Input validation
   if (!charityName || !hoursVolunteered || !date || !experienceRating) {
-    alert("Please fill out all fields.");
+    alert("Please fill out all fields.");    
     return;
   }
 

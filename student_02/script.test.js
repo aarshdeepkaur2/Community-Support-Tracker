@@ -1,4 +1,3 @@
-// volunteer.test.js
 
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
