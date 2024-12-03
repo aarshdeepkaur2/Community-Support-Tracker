@@ -1,0 +1,16 @@
+{
+  "name": "community-support-tracker-main",
+  "version": "1.0.0",
+  "description": "The Community Support Tracker is a project designed to help organizations track and manage community support activities such as donations, volunteer hours, and event signups. It aims to provide a simple interface to log and summarize key data, making it easier for groups to assess their initiatives and reach their goals.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^25.0.1"
+  }
+}

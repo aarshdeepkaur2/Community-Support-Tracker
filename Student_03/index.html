@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Support Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#donation-tracker">Donation Tracker</a></li>
+                <li><a href="#volunteer-hours">Volunteer Hours</a></li>
+                <li><a href="#event-signup">Event Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Donation Tracker Section -->
+        <section id="donation-tracker">
+            <h1>Donation Tracker</h1>
+            <p>Track and manage donations effectively.</p>
+
+            <!-- Donation Form -->
+            <form id="donationForm">
+                <label for="charityName">Charity Name:</label>
+                <input type="text" id="charityName" name="charityName" required>
+
+                <label for="donationAmount">Donation Amount:</label>
+                <input type="number" id="donationAmount" name="donationAmount" required>
+
+                <label for="donationDate">Date of Donation:</label>
+                <input type="date" id="donationDate" name="donationDate" required>
+
+                <label for="donorMessage">Donor Message:</label>
+                <textarea id="donorMessage" name="donorMessage"></textarea>
+
+                <button type="submit">Submit Donation</button>
+            </form>
+        </section>
+
+        <!-- Volunteer Hours Tracker Section -->
+        <section id="volunteer-hours">
+            <h1>Volunteer Hours Tracker</h1>
+            <p>Log your volunteer hours and contributions.</p>
+            <!-- Add content for the volunteer hours tracker here -->
+        </section>
+
+        <!-- Event Signup Section -->
+        <section id="event-signup">
+            <h1>Event Signup</h1>
+            <form id="event-signup-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="eventName" required>
+
+                <label for="representative-name">Company Representative's Name:</label>
+                <input type="text" id="representative-name" name="representativeName" required>
+
+                <label for="representative-email">Representative's Email:</label>
+                <input type="email" id="representative-email" name="representativeEmail" required>
+
+                <label for="role-selection">Role Selection:</label>
+                <select id="role-selection" name="role" required>
+                    <option value="" disabled selected>Select a role</option>
+                    <option value="sponsor">Sponsor</option>
+                    <option value="participant">Participant</option>
+                    <option value="organizer">Organizer</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 PiXELL River Financial. All rights reserved.</p>
+    </footer>
+
+    <!-- External Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
