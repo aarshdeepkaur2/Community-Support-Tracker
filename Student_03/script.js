@@ -1,6 +1,6 @@
 document.getElementById("event-signup-form").addEventListener("submit", function (e) {
     e.preventDefault();
-
+         
     // Collect form data
     const formData = {
         eventName: document.getElementById("event-name").value.trim(),
