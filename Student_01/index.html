@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Tracker</title>
+    <title>Community Support Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Donation Tracker</h1>
-    <form id="donationForm">
-        <label for="charityName">Charity Name:</label>
-        <input type="text" id="charityName" name="charityName" required>
+    <header>
+        <h1>Community Support Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#donation-tracker">Donation Tracker</a></li>
+                <li><a href="#volunteer-hours">Volunteer Hours</a></li>
+                <li><a href="#event-signup">Event Signup</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="donationAmount">Donation Amount:</label>
-        <input type="number" id="donationAmount" name="donationAmount" required>
+    <main>
+        <!-- Donation Tracker Section -->
+        <section id="donation-tracker">
+            <h2>Donation Tracker</h2>
+            <p>Track and manage donations effectively.</p>
 
-        <label for="donationDate">Date of Donation:</label>
-        <input type="date" id="donationDate" name="donationDate" required>
+            <!-- Donation Form -->
+            <form id="donationForm">
+                <label for="charityName">Charity Name:</label>
+                <input type="text" id="charityName" name="charityName" required>
 
-        <label for="donorMessage">Donor Message:</label>
-        <textarea id="donorMessage" name="donorMessage"></textarea>
+                <label for="donationAmount">Donation Amount:</label>
+                <input type="number" id="donationAmount" name="donationAmount" required>
 
-        <button type="submit">Submit Donation</button>
-    </form>
+                <label for="donationDate">Date of Donation:</label>
+                <input type="date" id="donationDate" name="donationDate" required>
 
-    <h2>Donations</h2>
-    <table id="donationTable">
-        <thead>
-            <tr>
-                <th>Charity Name</th>
-                <th>Amount</th>
-                <th>Date</th>
-                <th>Comment</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Donation records will be dynamically added here -->
-        </tbody>
-    </table>
+                <label for="donorMessage">Donor Message:</label>
+                <textarea id="donorMessage" name="donorMessage"></textarea>
 
-    <h3>Total Donations: $<span id="totalDonations">0.00</span></h3>
+                <button type="submit">Submit Donation</button>
+            </form>
 
+            <!-- Donations Table -->
+            <h2>Donations</h2>
+            <table id="donationTable">
+                <thead>
+                    <tr>
+                        <th>Charity Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Comment</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Donation records will be dynamically added here -->
+                </tbody>
+            </table>
+
+            <!-- Total Donations -->
+            <h3>Total Donations: $<span id="totalDonations">0.00</span></h3>
+        </section>
+
+        <!-- Volunteer Hours Section -->
+        <section id="volunteer-hours">
+            <h2>Volunteer Hours Tracker</h2>
+            <p>Log your volunteer hours and contributions.</p>
+        </section>
+
+        <!-- Event Signup Section -->
+        <section id="event-signup">
+            <h2>Event Signup</h2>
+            <p>Register for community events with ease.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PiXELL River Financial. All rights reserved.</p>
+    </footer>
+
+    <!-- Script file -->
     <script src="Script.js"></script>
 </body>
 </html>

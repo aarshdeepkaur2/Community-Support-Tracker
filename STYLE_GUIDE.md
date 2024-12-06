@@ -32,20 +32,42 @@
 
 ### Mobile (Up to 767px)    
 #### Css 
-@media (max-width: 767px) {
-  body {
-    font-size: 14px;
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
   }
-  .form-container {
-    width: 100%;
-    padding: 10px;
+
+  #donation-tracker {
+      padding: 15px;
   }
-  .form-container input, .form-container button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
+
+  form {
+      width: 100%;
   }
-  h1 {
-    font-size: 24px;
+
+  button {
+      font-size: 14px;
+  }
+
+  table {
+      font-size: 14px;
   }
 }
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+      font-size: 18px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 12px;
+  }
+
+  label, input, textarea {
+      font-size: 14px;
+  }
+}
+
