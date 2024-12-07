@@ -38,7 +38,7 @@ test('should trigger function on form submit', () => {
   expect(handleSubmit).toHaveBeenCalled();
 });
 
-// Test form data collection
+
 test('should collect form data correctly', () => {
   document.body.innerHTML = `
     <form id="volunteer-form">
