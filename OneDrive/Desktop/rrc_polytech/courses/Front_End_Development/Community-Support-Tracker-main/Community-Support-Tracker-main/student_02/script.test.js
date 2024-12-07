@@ -31,6 +31,7 @@ beforeEach(() => {
 });
 
 // Test if form submission triggers the correct function
+
 test('should trigger function on form submit', () => {
   document.body.innerHTML = '<form id="volunteer-form"><button type="submit">Submit</button></form>';
   const submitButton = document.querySelector('#volunteer-form button');
