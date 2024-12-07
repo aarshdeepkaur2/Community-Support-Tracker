@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Hours Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Shared Header Content -->
+  </header>
+  <nav>
+    
+  </nav>
+  <main>
+    <h1>Volunteer Hours Tracker</h1>
+    <form id="volunteer-form">
+      <label for="charity-name">Charity Name:</label>
+      <input type="text" id="charity-name" required>
+
+      <label for="hours-volunteered">Hours Volunteered:</label>
+      <input type="number" id="hours-volunteered" min="1" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="experience-rating">Experience Rating:</label>
+      <input type="number" id="experience-rating" min="1" max="5" required>
+
+      <button type="submit">Log Volunteer Hours</button>
+    </form>
+
+    <h2>Logged Volunteer Hours</h2>
+    <table id="volunteer-table">
+      <thead>
+        <tr>
+          <th>Charity Name</th>
+          <th>Hours Volunteered</th>
+          <th>Date</th>
+          <th>Experience Rating</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+
+    <h2 id="total-hours">Total Hours: 0</h2>
+  </main>
+  <footer>
+    <!-- Shared Footer Content -->
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
