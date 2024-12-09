@@ -1,143 +1,164 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 20px;
-  }
-  
-  header {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 10px; /* Slightly increased padding */
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  header nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold; /* Added emphasis */
-  }
-  
-  header nav a:hover {
-    color: #d1e7ff; /* Softer hover color */
-  }
-  
-  /* Form Container */
-  .form-container {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Slight shadow */
-  }
-  
-  h2 {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  input, button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  input:focus, button:focus {
-    outline: 2px solid #007bff; /* Accessibility improvement */
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Table Styling */
-  table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+#donation-tracker {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
   }
 
-  th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+  #donation-tracker {
+      padding: 15px;
   }
-  
-  th {
-    background-color: #007bff;
-    color: white;
+
+  form {
+      width: 100%;
   }
-  
-  button.delete {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  button.delete:hover {
-    background-color: #d32f2f;
-  }
-  
-  /* Total Hours Styling */
-  #total-hours {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 767px) {
-    body {
+
+  button {
       font-size: 14px;
-      margin: 10px; /* Reduced margin for smaller screens */
-    }
-    header {
-      padding: 10px; /* Adjusted padding */
-    }
-    .form-container {
-      width: 100%;
-      padding: 10px;
-    }
-    .form-container input, .form-container button {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-    }
-    table {
-      font-size: 14px; /* Reduced table font size */
-    }
-    th, td {
-      padding: 8px; /* Adjusted padding for smaller screens */
-    }
-    h2 {
-      font-size: 20px;
-    }
   }
-   
+
+  table {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+      font-size: 18px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 12px;
+  }
+
+  label, input, textarea {
+      font-size: 14px;
+  }
+}

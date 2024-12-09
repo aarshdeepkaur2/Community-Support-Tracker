@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Navigation Bar -->
     <header>
+        <h1>Community Support Tracker</h1>
         <nav>
             <ul>
                 <li><a href="#donation-tracker">Donation Tracker</a></li>
@@ -18,11 +18,10 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <!-- Donation Tracker Section -->
         <section id="donation-tracker">
-            <h1>Donation Tracker</h1>
+            <h2>Donation Tracker</h2>
             <p>Track and manage donations effectively.</p>
 
             <!-- Donation Form -->
@@ -41,66 +40,46 @@
 
                 <button type="submit">Submit Donation</button>
             </form>
-        </section>
 
-        <!-- Volunteer Hours Tracker Section -->
-        <section id="volunteer-hours">
-            <h1>Volunteer Hours Tracker</h1>
-            <p>Log your volunteer hours and contributions.</p>
-
-            <!-- Volunteer Hours Form -->
-            <form id="volunteerForm">
-                <label for="volunteerCharityName">Charity Name:</label>
-                <input type="text" id="volunteerCharityName" name="volunteerCharityName" required>
-
-                <label for="volunteerHours">Hours Volunteered:</label>
-                <input type="number" id="volunteerHours" name="volunteerHours" required min="1">
-
-                <label for="volunteerDate">Date:</label>
-                <input type="date" id="volunteerDate" name="volunteerDate" required>
-
-                <label for="volunteerRating">Experience Rating (1-5):</label>
-                <input type="number" id="volunteerRating" name="volunteerRating" required min="1" max="5">
-
-                <button type="submit">Log Volunteer Hours</button>
-            </form>
-
-            <!-- Logged Volunteer Hours Table -->
-            <table id="volunteerTable">
+            <!-- Donations Table -->
+            <h2>Donations</h2>
+            <table id="donationTable">
                 <thead>
                     <tr>
                         <th>Charity Name</th>
-                        <th>Hours Volunteered</th>
+                        <th>Amount</th>
                         <th>Date</th>
-                        <th>Experience Rating</th>
-                        <th>Actions</th>
+                        <th>Comment</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Dynamically added rows will appear here -->
+                    <!-- Donation records will be dynamically added here -->
                 </tbody>
             </table>
 
-            <!-- Summary Section -->
-            <div id="volunteerSummary">
-                <h2>Total Hours Volunteered: <span id="totalHours">0</span></h2>
-            </div>
+            <!-- Total Donations -->
+            <h3>Total Donations: $<span id="totalDonations">0.00</span></h3>
+        </section>
+
+        <!-- Volunteer Hours Section -->
+        <section id="volunteer-hours">
+            <h2>Volunteer Hours Tracker</h2>
+            <p>Log your volunteer hours and contributions.</p>
         </section>
 
         <!-- Event Signup Section -->
         <section id="event-signup">
-            <h1>Event Signup</h1>
+            <h2>Event Signup</h2>
             <p>Register for community events with ease.</p>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 PiXELL River Financial. All rights reserved.</p>
     </footer>
 
-    <!-- External Script file -->
-    <script src="script.js"></script>
+    <!-- Script file -->
+    <script src="Script.js"></script>
 </body>
 </html>
-     
